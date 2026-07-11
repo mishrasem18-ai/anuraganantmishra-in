@@ -5,10 +5,10 @@ Anurag Anant Mishra is an AI, MarTech and Digital Analytics authority focused on
 ## Site
 
 - Home: https://www.anuraganantmishra.in/
-- About: https://www.anuraganantmishra.in/about.html
-- Expertise: https://www.anuraganantmishra.in/expertise.html
-- Portfolio: https://www.anuraganantmishra.in/portfolio.html
-- Contact: https://www.anuraganantmishra.in/contact.html
+- About: https://www.anuraganantmishra.in/about
+- Expertise: https://www.anuraganantmishra.in/expertise
+- Portfolio: https://www.anuraganantmishra.in/portfolio
+- Contact: https://www.anuraganantmishra.in/contact
 
 ## Core Topics
 
