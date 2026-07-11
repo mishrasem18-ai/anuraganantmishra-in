@@ -1,0 +1,28 @@
+# Anurag Anant Mishra
+
+Anurag Anant Mishra is an AI, MarTech and Digital Analytics authority focused on practical architecture for customer data, personalization, analytics automation and applied AI engineering.
+
+## Site
+
+- Home: https://www.anuraganantmishra.in/
+- About: https://www.anuraganantmishra.in/about.html
+- Expertise: https://www.anuraganantmishra.in/expertise.html
+- Portfolio: https://www.anuraganantmishra.in/portfolio.html
+- Contact: https://www.anuraganantmishra.in/contact.html
+
+## Core Topics
+
+- Artificial Intelligence and applied AI engineering
+- MarTech architecture
+- Digital Analytics
+- Adobe Experience Platform
+- Adobe Target, including experience targeting, recommendations, personalization and A/B testing
+- Customer Journey Analytics
+- Google Analytics 4
+- Google Tag Manager
+- Enterprise Analytics Automation
+- Privacy-aware measurement and personalization
+
+## Content Boundaries
+
+This site keeps proprietary implementation details out of public content. Portfolio content describes capability areas instead of real implementations.
