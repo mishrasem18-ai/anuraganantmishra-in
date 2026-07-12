@@ -311,3 +311,24 @@ footer {
   .about-body { padding: 0 15px; }
   .section { padding: 60px 15px; }
 }
+.error-links{
+    list-style:none;
+    padding:0;
+    margin-top:30px;
+}
+
+.error-links li{
+    margin:14px 0;
+}
+
+.error-links a{
+    color:#d4af37;
+    text-decoration:none;
+    font-weight:600;
+    font-size:20px;
+    transition:.3s;
+}
+
+.error-links a:hover{
+    color:#ffffff;
+}
