@@ -9,6 +9,8 @@ Anurag Anant Mishra is an AI, MarTech and Digital Analytics authority focused on
 - Expertise: https://www.anuraganantmishra.in/expertise
 - Portfolio: https://www.anuraganantmishra.in/portfolio
 - Contact: https://www.anuraganantmishra.in/contact
+- Case Studies: https://www.anuraganantmishra.in/case-studies
+- Insights — Adobe + GA4 Tag Governance: https://www.anuraganantmishra.in/adobe-ga4-tag-governance
 
 ## Core Topics
 
@@ -26,3 +28,7 @@ Anurag Anant Mishra is an AI, MarTech and Digital Analytics authority focused on
 ## Content Boundaries
 
 This site keeps proprietary implementation details out of public content. Portfolio content describes capability areas instead of real implementations.
+
+## Writing
+
+- Adobe Experience Cloud + GA4 Tag Governance in Multi-Market MarTech: a practical, experience-led guide to data layer discipline, consent-gated tagging, and automated tag QA across markets. https://www.anuraganantmishra.in/adobe-ga4-tag-governance
