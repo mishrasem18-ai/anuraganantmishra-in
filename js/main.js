@@ -19,6 +19,11 @@ if ('IntersectionObserver' in window) {
     });
   }, { threshold: 0.2 });
   document.querySelectorAll('.fade').forEach(el => observer.observe(el));
+  document.querySelectorAll('.fade').forEach(el => {
+      if (el.getBoundingClientRect().top < window.innerHeight) {
+        el.classList.add('visible');
+      }
+    });
 } else {
   document.querySelectorAll('.fade').forEach(el => el.classList.add('visible'));
 }
