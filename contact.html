@@ -133,27 +133,7 @@ Let's discuss AI, Digital Analytics, MarTech architecture, GA4, Adobe Experience
     <p>© 2026 Anurag Anant Mishra | All Rights Reserved</p>
   </footer>
 
-  <script>
-    const toggle = document.querySelector('.menu-toggle');
-    const navList = document.querySelector('nav ul');
-    if (toggle && navList) {
-      toggle.addEventListener('click', () => {
-        const isOpen = navList.classList.toggle('open');
-        toggle.setAttribute('aria-expanded', String(isOpen));
-      });
-    }
-
-    if ('IntersectionObserver' in window) {
-      const observer = new IntersectionObserver(e => e.forEach(x => {
-        if (x.isIntersecting) {
-          x.target.classList.add('visible');
-          observer.unobserve(x.target);
-        }
-      }), { threshold: 0.2 });
-      document.querySelectorAll('.fade').forEach(el => observer.observe(el));
-    } else {
-      document.querySelectorAll('.fade').forEach(el => el.classList.add('visible'));
-    }
+  <script src="js/main.js"></script>
 
     const scriptURL = "https://script.google.com/macros/s/AKfycbx89y0xIx5nHW7Dtc2NnVh3tavTkCF9_63nrGDBLyvWlday5xYZSPBc6YFiQCnvQ5D9/exec";
     const form = document.getElementById("contactForm");

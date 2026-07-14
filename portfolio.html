@@ -131,27 +131,6 @@ This portfolio highlights practical capabilities across Digital Analytics, AI, M
     <p>© 2026 Anurag Anant Mishra | All Rights Reserved</p>
   </footer>
 
-  <script>
-    const toggle = document.querySelector('.menu-toggle');
-    const navList = document.querySelector('nav ul');
-    if (toggle && navList) {
-      toggle.addEventListener('click', () => {
-        const isOpen = navList.classList.toggle('open');
-        toggle.setAttribute('aria-expanded', String(isOpen));
-      });
-    }
-
-    if ('IntersectionObserver' in window) {
-      const observer = new IntersectionObserver(e => e.forEach(x => {
-        if (x.isIntersecting) {
-          x.target.classList.add('visible');
-          observer.unobserve(x.target);
-        }
-      }), { threshold: 0.2 });
-      document.querySelectorAll('.fade').forEach(el => observer.observe(el));
-    } else {
-      document.querySelectorAll('.fade').forEach(el => el.classList.add('visible'));
-    }
-  </script>
+ <script src="js/main.js"></script>
 </body>
 </html>
