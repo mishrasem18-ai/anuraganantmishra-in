@@ -339,3 +339,40 @@ footer {
     background: #d4af37;
     color: #000;
 }
+
+.grid-3{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.card{
+    transition:all .3s ease;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#e3b938;
+    box-shadow:0 20px 40px rgba(227,185,56,.18);
+}
+
+.banner p{
+    max-width:900px;
+    margin:20px auto 0;
+    text-align:center;
+}
+
+.card{
+    height:100%;
+    display:flex;
+    flex-direction:column;
+}
+
+
+.cert-list a {
+  color: #d4a017;
+  text-decoration: none;
+}
+.cert-list a:hover {
+  text-decoration: underline;
+}
