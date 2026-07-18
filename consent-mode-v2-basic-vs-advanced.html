@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consent Mode v2: Basic vs Advanced, Explained</title>
+  <meta name="description" content="A practical look at Google Consent Mode v2 - the real difference between Basic and Advanced, why cookieless pings matter, and the legal sign-off you need first." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://www.anuraganantmishra.in/consent-mode-v2-basic-vs-advanced" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Anurag Anant Mishra" />
+  <meta property="og:title" content="Consent Mode v2: Basic vs Advanced, Explained" />
+  <meta property="og:description" content="The real difference between Basic and Advanced Consent Mode, cookieless pings, and the legal sign-off most guides skip." />
+  <meta property="og:url" content="https://www.anuraganantmishra.in/consent-mode-v2-basic-vs-advanced" />
+  <meta property="og:image" content="https://www.anuraganantmishra.in/images/logo.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Consent Mode v2: Basic vs Advanced, Explained" />
+  <meta name="twitter:description" content="The real difference between Basic and Advanced Consent Mode, and the legal sign-off most guides skip." />
+  <meta name="twitter:image" content="https://www.anuraganantmishra.in/images/logo.png" />
+
+  <!-- Page readability styles -->
+  <style>
+    .content .container { max-width: 820px; margin: 0 auto; text-align: left; padding: 1rem 1.5rem; }
+    .content .container h2 { margin-top: 2.4rem; margin-bottom: 0.8rem; line-height: 1.3; }
+    .content .container p { margin-bottom: 1.2rem; line-height: 1.75; }
+    .content .container ul.bullets { margin: 0 0 1.4rem 1.2rem; }
+    .content .container ul.bullets li { margin-bottom: 0.7rem; line-height: 1.7; }
+    .content .container a { color: #d4a017; text-decoration: none; }
+    .content .container a:hover { text-decoration: underline; }
+  </style>
+
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="a2bd651a-b8fe-4b66-ba35-ebc9fe66b675" type="text/javascript" async></script>
+
+  <!-- Google Consent Mode -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag("consent", "default", {
+      ad_personalization: "denied",
+      ad_storage: "denied",
+      ad_user_data: "denied",
+      analytics_storage: "denied",
+      functionality_storage: "denied",
+      personalization_storage: "denied",
+      security_storage: "granted",
+      wait_for_update: 500
+    });
+    gtag("set", "ads_data_redaction", true);
+    gtag("set", "url_passthrough", true);
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WDQF5BTL');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://www.anuraganantmishra.in/#person",
+        "name": "Anurag Anant Mishra",
+        "url": "https://www.anuraganantmishra.in/",
+        "image": "https://www.anuraganantmishra.in/images/profile.png",
+        "jobTitle": "AI, MarTech and Digital Analytics Consultant",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bhopal",
+          "addressRegion": "Madhya Pradesh",
+          "addressCountry": "IN"
+        },
+        "knowsAbout": [
+          "Google Consent Mode",
+          "Privacy-first Measurement",
+          "Google Analytics 4",
+          "Google Tag Manager",
+          "MarTech Architecture",
+          "Tag Governance",
+          "Adobe Experience Platform",
+          "Adobe Analytics",
+          "Customer Journey Analytics"
+        ],
+        "hasCredential": [
+          "https://certification.adobe.com/credential/verify/c5025911-af05-40e2-93cb-16827fe4134b",
+          "https://certification.adobe.com/credential/verify/d6ba0ddc-1441-4f81-aa88-bd36895ee054",
+          "https://certification.adobe.com/credential/verify/697bc3b7-cc9c-4a6f-b7ce-825e9837b79e",
+          "https://certification.adobe.com/credential/verify/3c7a1029-6730-4d15-aaea-3eda9eac2898",
+          "https://www.credly.com/badges/ec6d9427-0f1d-44c3-86de-a85b7e857880/linked_in_profile"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.anuraganantmishra.in/#website",
+        "url": "https://www.anuraganantmishra.in/",
+        "name": "Anurag Anant Mishra"
+      },
+      {
+        "@type": "BlogPosting",
+        "@id": "https://www.anuraganantmishra.in/consent-mode-v2-basic-vs-advanced#article",
+        "headline": "Consent Mode v2: Basic vs Advanced, and Why the Difference Actually Matters",
+        "description": "A practical, experience-led explanation of Google Consent Mode v2 - Basic vs Advanced, cookieless pings, and the legal sign-off that has to come first.",
+        "url": "https://www.anuraganantmishra.in/consent-mode-v2-basic-vs-advanced",
+        "mainEntityOfPage": "https://www.anuraganantmishra.in/consent-mode-v2-basic-vs-advanced",
+        "author": { "@id": "https://www.anuraganantmishra.in/#person" },
+        "publisher": { "@id": "https://www.anuraganantmishra.in/#person" },
+        "isPartOf": { "@id": "https://www.anuraganantmishra.in/#website" },
+        "about": [ "Google Consent Mode", "Privacy-first Measurement", "Google Analytics 4", "Google Tag Manager" ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.anuraganantmishra.in/consent-mode-v2-basic-vs-advanced#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the difference between Basic and Advanced Consent Mode?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In Basic Consent Mode, Google tags do not load at all until the visitor consents, so you get nothing from users who decline. In Advanced Consent Mode, the tags load immediately but run without cookies until consent is given, sending anonymous cookieless pings in the meantime, which lets Google model the behaviour of users who declined."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Advanced Consent Mode collect data even when consent is declined?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. When consent is declined, Advanced Consent Mode still sends anonymous, cookieless pings that contain no identifiers and cannot recognise a user across visits. This gives an aggregate, modelled picture of traffic instead of zero data, which is the main practical advantage over Basic."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should Consent Mode defaults be hardcoded on the site or set in GTM?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Best practice is to hardcode the default denied consent state directly in the site's head, above the Google Tag Manager container. It can be pushed from GTM as well, but that can introduce a race condition where tags fire before the default state is set, so the hardcoded approach is more reliable."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need legal approval before using Advanced Consent Mode?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Because Advanced Consent Mode sends cookieless pings even when a user declines, whether that is acceptable depends on your jurisdiction and interpretation of consent law. Google provides the option, but you should get sign-off from legal before implementing it, so that you are compliant and not just technically correct."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDQF5BTL"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <header>
+    <img src="images/logo.png" class="logo" alt="Anurag Anant Mishra Logo" width="80" height="80" />
+    <button class="menu-toggle" aria-label="Toggle menu" aria-controls="primary-navigation" aria-expanded="false">☰</button>
+    <nav aria-label="Primary navigation">
+      <ul id="primary-navigation">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/expertise">Expertise</a></li>
+        <li><a href="/portfolio">Portfolio</a></li>
+        <li><a href="/case-studies">Case Studies</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="banner fade" style="background: linear-gradient(135deg, #000 60%, #3e2a00 100%);">
+    <div class="banner-content">
+      <h1>Consent Mode v2: Basic vs Advanced</h1>
+    </div>
+  </section>
+
+  <section class="content fade">
+    <div class="container">
+
+      <p><em>By Anurag Anant Mishra — MarTech Architect</em></p>
+
+      <h2>The short version</h2>
+      <p>Google Consent Mode v2 comes in two flavours: Basic and Advanced. The names make them sound like tiers of the same thing, but the difference is fundamental, and it changes what data you actually get. I recently implemented Advanced Consent Mode on this very site, so most of what follows comes from doing it rather than reading about it.</p>
+      <p>The one-line difference: in Basic mode, if someone declines consent, you get nothing from them. In Advanced mode, you still get an anonymous, modelled picture of their visit. That gap is bigger than it sounds.</p>
+
+      <h2>What does Consent Mode actually do?</h2>
+      <p>Consent Mode is the bridge between your cookie banner and your Google tags. When a visitor accepts or declines, Consent Mode translates that choice into signals your tags understand - mainly <em>analytics_storage</em> and <em>ad_storage</em> - and the tags then behave accordingly.</p>
+      <p>Before Consent Mode, the choice was binary and blunt: either a tag fired or it did not. Consent Mode makes the tag consent-aware, so it can adjust its behaviour instead of simply being switched on or off.</p>
+
+      <h2>How does Basic Consent Mode work?</h2>
+      <p>In Basic Consent Mode, Google tags are blocked entirely until the visitor gives consent. Nothing loads, nothing fires, no signal is sent. If the user accepts, the tags load and run normally. If they decline, you get complete silence from that visitor.</p>
+      <p>It is simple and easy to reason about. The cost is that everyone who declines becomes invisible - and in privacy-conscious regions, that can be a large share of your audience.</p>
+
+      <h2>How does Advanced Consent Mode work?</h2>
+      <p>In Advanced Consent Mode, the tags load immediately, but in a restricted state. Until consent is given, they run without cookies and without any identifier, and they send anonymous, cookieless pings to Google. These pings carry no way to recognise a person across pages, sessions or sites.</p>
+      <p>If the user then accepts, the tags upgrade to full behaviour. If they decline, the cookieless pings are all Google receives - and Google uses them to <em>model</em> the behaviour of declined users, filling the gap with aggregate estimates rather than leaving it empty.</p>
+
+      <h2>Why the "data even after decline" part is a genuine win</h2>
+      <p>This was my own moment of it clicking. I had assumed that declined consent meant zero data - that those visitors were simply gone from reporting. With Advanced Consent Mode, that is not the case. Even after someone declines, you still get a high-level, anonymous signal that a visit happened.</p>
+      <p>In practice that is close to a win-win. You respect the person's choice - no cookies, no identifier, nothing that tracks them - and you still get an aggregate sense of your traffic instead of a blind spot. For understanding roughly how many people are coming to your site and how that trends over time, that anonymous baseline is genuinely useful. It is not the same as full analytics, and it should not be sold as such, but it beats reporting on only the half of your audience that accepted.</p>
+
+      <h2>The part that confused me: cookieless data and the gcs signal</h2>
+      <p>I will be honest - two things took a while to sit right in my head. The first was the idea of collecting data <em>without cookies at all</em>. We are so used to analytics meaning "a cookie with an ID" that a cookieless, identifier-free ping feels almost contradictory at first. It clicks once you accept that the ping is aggregate by design - it is a signal that something happened, not a record of who did it.</p>
+      <p>The second was reading the <em>gcs</em> parameter while debugging. When you inspect the outgoing GA4 request, you see a value like <em>gcs=G100</em> or <em>gcs=G101</em>, and it is not obvious what it means. It is simply a status code for the consent state: the two digits after <em>G1</em> represent <em>ad_storage</em> and <em>analytics_storage</em>, where 0 is denied and 1 is granted. So <em>G100</em> means both denied, <em>G101</em> means analytics granted but ads denied, and <em>G111</em> means both granted. Once you can read that at a glance, verifying your setup becomes much easier - you can literally see the consent state on every hit.</p>
+
+      <h2>Where do the defaults belong - the site or GTM?</h2>
+      <p>Set the default denied consent state by hardcoding it directly in the site's head, above the Google Tag Manager container. This is the best practice, and there is a concrete reason for it.</p>
+      <p>You can push the defaults from within GTM instead, and it can work - but it sometimes introduces a race condition. If the default state is set from inside the container, there is a window where a tag can fire before the default has been registered, which defeats the whole point. Hardcoding the default in the head, before GTM loads, guarantees the denied state is in place first. I ran into exactly this timing behaviour during setup, and moving the defaults to the head resolved it cleanly.</p>
+
+      <h2>The step most guides skip: legal sign-off</h2>
+      <p>This is the part I want to be loudest about, because it is technical writing's blind spot. Consent is a legal matter, and it sits on a thin line. Advanced Consent Mode sends signals even when a user has declined - and whether that is acceptable depends on your jurisdiction and how consent law is interpreted there.</p>
+      <p>Google gives you the option to run Advanced mode. That does not mean it is automatically the right choice for your organisation. Before implementing it, get a discussion and a sign-off from your legal or privacy team. Being technically correct is not the same as being compliant, and on privacy the compliance bar is the one that matters. Implement the technology and the legal position together, not one before the other.</p>
+
+      <h2>So which should you use?</h2>
+      <p>If your legal team is comfortable with it, Advanced Consent Mode generally gives you more - you keep an anonymous baseline instead of losing declined users entirely. Basic mode is the more conservative choice when you want tags to stay completely dormant until consent, with no pings at all.</p>
+      <p>My honest summary: Advanced is usually the better default for understanding your traffic, but it is a decision you make <em>with</em> legal, not a switch you flip because a tutorial said so.</p>
+
+      <p style="margin-top:2rem;"><em>I write about MarTech architecture, analytics governance, and privacy-first measurement. If you are working through consent setups, you may also find my piece on <a href="/adobe-ga4-tag-governance">tag governance across Adobe and GA4</a> useful. More of my work is on the <a href="/">home page</a>.</em></p>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Anurag Anant Mishra | All Rights Reserved | <a href="/privacy" style="color:#d4a017; text-decoration:none;">Privacy Policy</a></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
